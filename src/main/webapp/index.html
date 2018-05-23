@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Shapes Example</title>     
+</head>
+<body>
+<h1 style="text-align:center">Drawing</h1>
+
+<form style="text-align:center">
+    <select id="shapeID">
+        <option value="bigcircle">Big Circle</option>
+        <option value="smallcircle">Small Circle</option>
+        <option value="bigsquare">Big Square</option>
+        <option value="smallsquare">Small Square</option>
+    </select>
+    <select id="colorID">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="orange">Orange</option>
+    </select>
+    <input onclick="clear_canvas()" value="Clear" type="button">
+    <input onclick="clone()" value="Clone" type="button">
+
+</form>
+
+
+<table style="text-align: left; width: 500px; margin-left: auto;
+        margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+    <tr>
+        <td style=" text-align: center; vertical-align: top;">
+            <canvas id="myDrawing" width="500" height="500"></canvas>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div id="output"></div>
+</body>
+<script src="js/webSocket.js"></script>
+
+</html>
